@@ -7,7 +7,13 @@ def find_last(s,r):
              n = n + 1
        return n - 1
 
-
+def find_last_1(s,r):
+	last_pos = -1
+	while True:
+		pos = s.find(r,last_pos + 1)
+		if pos == -1:
+			return last_pos
+		last_pos = pos
 
 
 
