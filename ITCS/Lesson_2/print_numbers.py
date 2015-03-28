@@ -4,4 +4,3 @@ def print_numbers(n):
 		i = i + 1
 		print i 
 
-print_numbers(5)
