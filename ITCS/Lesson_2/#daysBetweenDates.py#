@@ -8,7 +8,7 @@ def notsameDate(year1, month1, day1, year2, month2, day2):
             return day1 < day2
     return False
 
-def œô¡Òœô¡Òœô¡Òœô¡Òay(year, month, day):
+def nextDay(year, month, day):
     """Simple version: assume every month has 30 days"""
     if day < 30:
         return year, month, day + 1
