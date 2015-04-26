@@ -15,3 +15,10 @@ def print_all_links(page):
             page = page[endpos:]
         else:
             break
+
+def get_page(url):
+    try:
+        import urllib
+        return urllib.urlopen(url).read()
+    except:
+        return ''
