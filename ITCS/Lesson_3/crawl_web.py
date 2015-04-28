@@ -31,12 +31,12 @@ def union(l1, l2):
             l1.append(e)
     return l1
 
-def crawl_web(seed):
+def crawl_web(seed, max_pages):
     tocrawl = [seed]
     crawled = []
     while tocrawl:
         page = tocrawl.pop()
-        if page not in crawled:
+        if page not in crawled and len(crawled) < max_pages: # add max pages should crawled
             union(tocrawl, get_all_links(get_page(page)))
             crawled.append(page)
     return crawled
