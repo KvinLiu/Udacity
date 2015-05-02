@@ -1,0 +1,14 @@
+.description{
+    color:red;
+}
+
+.app{
+    display: flex;
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    border: solid lightblue 1px;
+}
