@@ -6,6 +6,7 @@ def check_sudoku(p):
         while i < n: #Go through each row and column
             row_count = 0
             col_count = 0
+            j = 0
             while j < n: #for each entry in ith row/column
                 if p[i][j] == digit: #check row count
                     row_count += 1
